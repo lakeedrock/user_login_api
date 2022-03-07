@@ -1,0 +1,12 @@
+{
+  "type": "",
+  "host": "",
+  "port": "",
+  "username": "",
+  "password": "",
+  "database": "",
+  "entities": ["src/entity/*.ts"],
+  "logging": false,
+  "synchronize": true,
+  "dropSchema": true
+}
