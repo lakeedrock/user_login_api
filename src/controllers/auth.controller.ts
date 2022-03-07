@@ -1,4 +1,4 @@
-import { Request, response, Response } from "express";
+import { Request, Response } from "express";
 import {
   RegisterUserRequestSchema,
   LoginUserRequestSchema,
@@ -16,10 +16,8 @@ import {
   PasswordComparable,
 } from "../interfaces/Authenticatable";
 import { UserDB } from "../db/UserDB";
-import { JwtPayload, sign, verify } from "jsonwebtoken";
-import { User } from "../entity/user.entity";
+import { sign } from "jsonwebtoken";
 import { DBUpdatable } from "../interfaces/DBAuthenticatable";
-import { log } from "util";
 import bcryptjs from "bcryptjs";
 
 /**
