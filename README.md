@@ -35,7 +35,7 @@ Run following commands in your terminal to generate config files
 cd user_login_api
 
 // Create config files
-cp example.env .env
+cp sample.env .env
 cp sample.ormconfig.json ormconfig.json
 ```
 
