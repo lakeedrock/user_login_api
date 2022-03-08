@@ -39,7 +39,7 @@ cp sample.env .env
 cp sample.ormconfig.json ormconfig.json
 ```
 
-useing your favoirite text editer update following fonfig values
+using your favourite text editor update following config values
 
 ### Environment configuration #.env file
 ```shell
