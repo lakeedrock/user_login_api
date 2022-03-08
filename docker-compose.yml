@@ -10,7 +10,7 @@ services:
       - data-db:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=node_db
-      - MYSQL_USER=lakshan
+      - MYSQL_USER=root
       - MYSQL_PASSWORD=Dev@r0ot
       - MYSQL_ROOT_PASSWORD=Dev@r0ot
       - MYSQL_TCP_PORT=3308
