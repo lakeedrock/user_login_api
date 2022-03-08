@@ -42,21 +42,21 @@ cp sample.ormconfig.json ormconfig.json
 useing your favoirite text editer update following fonfig values
 
 ### Environment configuration #.env file
-```
+```shell
 PORT= { Application server port }
 SECRET_KEY= { JWT secret key }
 MAX_AGE= { Lifetime of JWT cookie : 86400000 (one day) }
-FRONTEND_ORIGIN= { Origin for cors : "http://localhost:8000" }
+FRONTEND_ORIGIN= { Origin for cors : "http://localhost:80" }
 ```
 ### Database configuration #ormconfig.json file
 
 ```shell
 {
   "type": "",           // Database type : mysql
-  "host": "",           // Database host : localhost
-  "port": "",           // Database port : 3306
+  "host": "",           // Database host : localhost // mysql_server for docker
+  "port": "",           // Database port : 3308
   "username": "",       // Database user : root
-  "password": "",       // Database user password : 
+  "password": "",       // Database user password : Dev@r0ot
   "database": "",       // Database name: node_db
   "entities": ["src/entity/*.ts"],
   "logging": false,      // Set to true if you need to see logs in console
@@ -64,6 +64,18 @@ FRONTEND_ORIGIN= { Origin for cors : "http://localhost:8000" }
   "dropSchema": true
 }
 ```
+
+## Run in docker
+run following command in terminal in your project root
+````shell
+docker compose up
+````
+
+## Run in local
+#### Requirements
+* Node Js and NPM installed
+* MySQL server installed
+* Postman installed (For testing purposes)
 
 ## Install node modules
 ```shell
